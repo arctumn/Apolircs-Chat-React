@@ -19,7 +19,11 @@ const user_message = (user:User) => {
 const message_format = (message:Message) => {
     return (
         <div className="message" style={user_message(message.from_user)}>
-                <h2>{message.from_user.nickname + `:`}</h2>
+                <div className="message_header">
+                    <img alt="User ico" src="https://img.icons8.com/material-sharp/24/000000/user-male-circle.png"/>
+                    <h2>{message.from_user.nickname}</h2>
+                    
+                </div>
                 <h5>{message.message}</h5>
         </div>
     )

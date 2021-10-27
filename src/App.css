@@ -39,3 +39,17 @@
 .NavBar p {
   margin-top: 1.5vh;
 }
+.message_header {
+  display: flex;
+
+}
+.message_header img p {
+  flex: 1;
+}
+.message_header img {
+  width: 30px;
+  height: 30px;
+  margin-top: 2vh;
+  margin-left: 1vw;
+  margin-right: 0px;
+}

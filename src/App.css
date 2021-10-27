@@ -3,7 +3,7 @@
   align-items: normal;
   box-sizing: border-box;
   background: rgb(114, 241, 250);
-  height: 15vh;
+  height: 20vh;
   border-radius: 1em;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -49,7 +49,7 @@
 .message_header img {
   width: 30px;
   height: 30px;
-  margin-top: 2vh;
+  margin-top: 4vh;
   margin-left: 1vw;
   margin-right: 0px;
 }

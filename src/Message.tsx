@@ -12,19 +12,21 @@ export interface Message {
     message: string
 }
 
-const user_message = (user:User) => {
+export const user_message = (user:User) => {
    return { background: user.background}
 }
-
+export const user_name = (user:User) => {
+    return {color: user.background}
+}
 const message_format = (message:Message) => {
     return (
         <div className="message" style={user_message(message.from_user)}>
                 <div className="message_header">
                     <img alt="User ico" src="https://img.icons8.com/material-sharp/24/000000/user-male-circle.png"/>
-                    <h2>{message.from_user.nickname}</h2>
+                    <p style= {user_name(message.from_user)}>{message.from_user.nickname}</p>
                     
                 </div>
-                <h5>{message.message}</h5>
+                <p>{message.message}</p>
         </div>
     )
 }

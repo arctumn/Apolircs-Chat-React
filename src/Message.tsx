@@ -1,7 +1,8 @@
 import { FC } from "react"
-
+import './App.css';
 export interface User {
-    nickname: string
+    nickname: string,
+    //color: string
 }
 
 export interface Message {
@@ -13,8 +14,8 @@ export interface Message {
 
 const message_format = (message:Message) => {
     return (
-        <div>
-                <p>{message.from_user.nickname}</p>
+        <div className="message">
+                <h2>{message.from_user.nickname + `:`}</h2>
                 <h5>{message.message}</h5>
         </div>
     )

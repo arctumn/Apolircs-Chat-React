@@ -2,7 +2,7 @@ import { FC } from "react"
 import './App.css';
 export interface User {
     nickname: string,
-    //color: string
+    background: string
 }
 
 export interface Message {
@@ -12,9 +12,13 @@ export interface Message {
     message: string
 }
 
+const user_message = (user:User) => {
+   return { background: user.background}
+}
+
 const message_format = (message:Message) => {
     return (
-        <div className="message">
+        <div className="message" style={user_message(message.from_user)}>
                 <h2>{message.from_user.nickname + `:`}</h2>
                 <h5>{message.message}</h5>
         </div>

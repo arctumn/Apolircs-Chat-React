@@ -2,7 +2,7 @@
 .message {
   align-items: normal;
   box-sizing: border-box;
-  background: salmon;
+  background: rgb(114, 241, 250);
   height: 15vh;
   border-radius: 1em;
   margin-left: 10vw;
@@ -21,7 +21,7 @@
 
 .NavBar {
   display: flex;
-  background-color: lightslategray;
+  background: lightslategray;
 }
 .NavBar img p button{
   flex: 1;
